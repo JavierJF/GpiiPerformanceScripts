@@ -106,7 +106,6 @@ users = [
 ]
 
 def login(l, username):
-    auth_url = "https://flowmanager.jj.dev.gcp.gpii.net/access_token"
     headers = {
         "Content-Type":"application/x-www-form-urlencoded",
     }
@@ -142,7 +141,6 @@ class UserBehavior(TaskSet):
 
     @task
     def my_task(self):
-        print("Access TOKEN: ", self.access_token)
         preferences(self, self.username, self.access_token)
 
 class WebsiteUser(HttpLocust):
