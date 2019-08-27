@@ -1,0 +1,11 @@
+{
+    "foo":  true,
+    "bar":  false,
+    "baz":  true,
+    "qux":  false,
+    "quux": true,
+    "string": "should not be flipped.",
+    "deep": {
+        "deepBoolean": true
+    }
+}
